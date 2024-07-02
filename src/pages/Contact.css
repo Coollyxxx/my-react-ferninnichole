@@ -1,0 +1,81 @@
+/* Contact.css */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #000;
+  color: #fff;
+}
+
+.contact-form {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 600px; /* Set a max-width to control the size */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: float 3s ease-in-out infinite;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 20px; /* Increased margin for better spacing */
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #000;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px 10px 10px 40px; /* Add padding to the left for the icon */
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+textarea {
+  height: 150px; /* Set the height of the textarea */
+  resize: vertical;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Ensure the button matches the width of the form */
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ccc;
+}
+
+button svg {
+  margin-right: 8px;
+}
+

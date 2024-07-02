@@ -1,0 +1,55 @@
+/* Project.css */
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #000;
+  color: #fff;
+}
+
+h1 {
+  margin-bottom: 40px;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.project-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 400px; /* Set the width of each project item */
+  text-align: center;
+}
+
+.project-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.project-title {
+  font-size: 24px; /* Larger font size for project title */
+  margin-bottom: 20px; /* Space between title and description */
+}
+
+.project-item p {
+  font-size: 18px; /* Font size for project description */
+  margin-bottom: 20px;
+}
+
+.project-item a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.project-item a:hover {
+  text-decoration: underline;
+}

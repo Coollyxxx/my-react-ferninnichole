@@ -1,0 +1,111 @@
+/* Experience.css */
+#experience {
+  background-color: #f8f9fa;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.text-center {
+  text-align: center;
+  font-size: 2.5rem; /* Adjust the font size as needed */
+  margin-bottom: 5rem; /* Increase margin bottom for spacing */
+  margin-top: 0rem; /* Adjust margin top to move the heading slightly up */
+}
+
+.timeline {
+  position: relative;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #007bff;
+  left: 50%;
+  margin-left: -2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+  clear: both;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  float: left;
+  text-align: right;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  float: right;
+  text-align: left;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
+  background: #007bff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+}
+
+.timeline-content {
+  width: 45%;
+  padding: 20px;
+  background: #000; /* Changed background color to black */
+  color: #fff; /* Changed text color to white */
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: justify; /* Justify text */
+  margin-bottom: 20px; /* Added bottom margin for spacing */
+  transition: transform 0.3s ease; /* Added transition for smooth zoom effect */
+}
+
+.timeline-content:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.timeline-content h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.timeline-content span {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.timeline-content p {
+  font-size: 16px;
+  margin-bottom: 0;
+  text-align: justify; /* Justify paragraph text */
+}
+
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+    float: none;
+    text-align: left;
+    width: 100%;
+    margin-left: 50px;
+  }
+
+  .timeline-icon {
+    left: 0;
+    margin-left: 0;
+  }
+}
