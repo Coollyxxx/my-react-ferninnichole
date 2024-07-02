@@ -28,6 +28,7 @@
 .text-content {
   flex: 1;
   margin-left: 50px; /* Adjust left margin to create space between image and text */
+  text-align: justify; /* Justify the text */
 }
 
 .image-content {
@@ -60,6 +61,4 @@
   text-decoration: none;
   margin: 0 5px;
 }
-
-
 
